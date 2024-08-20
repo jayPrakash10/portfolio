@@ -10,9 +10,9 @@ const Portfolio = () => {
         Portfolio
       </h2>
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4">
-        {portfolio.map((p) => (
+        {portfolio.map((p, ind) => (
           // <div className="cursor-pointer">
-          <a href={p.url} target="_blank" rel="noreferrer">
+          <a href={"portfolio/"+p.slug} rel="noreferrer" key={"pf"+ind}>
             <Card name={p.projectName} image={p.images[0]} />
           </a>
           // </div>

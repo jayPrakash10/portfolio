@@ -17,6 +17,11 @@ import ANG3 from "../portfolio/ang-home.png";
 import BS1 from "../portfolio/books-1.png";
 import BS2 from "../portfolio/books-2.png";
 
+import TTT1 from "../portfolio/ss_ttt_welcome.png";
+import TTT2 from "../portfolio/ss_ttt_game.png";
+import TTT3 from "../portfolio/ss_ttt_player_turn.png";
+import TTT4 from "../portfolio/ss_ttt_winner.png";
+
 import M1 from "../portfolio/media-1.png";
 import M2 from "../portfolio/media-2.png";
 
@@ -27,6 +32,8 @@ export const portfolio = [
     client: "Aankade",
     url: "https://aankade.com/",
     description: "",
+    slug: "aankade",
+    tech: { front: "Angular", style: "CoreUI" },
   },
   {
     projectName: "Chat App",
@@ -34,13 +41,17 @@ export const portfolio = [
     client: "Self",
     url: "https://demochat-web.web.app",
     description: "",
+    slug: "realtime-chat",
+    tech: { front: "React", style: "Bootstrap", back: "Firestore/Firebase" },
   },
   // {
-  //   projectName : "Chat Mobile App",
+  //   projectName: "Chat Mobile App",
   //   images: [],
   //   client: "",
   //   url: "",
   //   description: "",
+  //   slug: "aankade",
+  //   tech: { front: "React Native", style: "" },
   // },
   {
     projectName: "SignIn/SignUp Page in Angular",
@@ -48,6 +59,8 @@ export const portfolio = [
     client: "Self",
     url: "https://angular-signinsignup.web.app",
     description: "",
+    slug: "angular-signin",
+    tech: { front: "Angular", style: "CSS" },
   },
   {
     projectName: "Books Search App",
@@ -55,6 +68,17 @@ export const portfolio = [
     client: "Self",
     url: "https://bookstoremanager.web.app",
     description: "",
+    slug: "bookapp",
+    tech: { front: "React", style: "Bootstrap" },
+  },
+  {
+    projectName: "Tic-Tac-Toe in Flutter",
+    images: [TTT1, TTT2, TTT3, TTT4],
+    client: "Self",
+    url: "",
+    description: "",
+    slug: "flutter-tictactoe",
+    tech: { front: "Flutter" },
   },
   {
     projectName: "Rearrange/Sort feature",
@@ -62,5 +86,7 @@ export const portfolio = [
     client: "Self",
     url: "https://imagearranger.web.app",
     description: "",
+    slug: "sort-media",
+    tech: { front: "React", style: "Bootstrap" },
   },
 ];

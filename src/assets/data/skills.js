@@ -12,6 +12,10 @@ export const skills = [
     percent: 80,
   },
   {
+    skill: "Flutter",
+    percent: 50,
+  },
+  {
     skill: "Java",
     percent: 85,
   },

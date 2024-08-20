@@ -112,8 +112,8 @@ const Resume = () => {
             Skills
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 p-2 lg:p-4">
-            {skills.map((sk) => (
-              <div className="grid place-items-center p-2 lg:p-4">
+            {skills.map((sk, ind) => (
+              <div className="grid place-items-center p-2 lg:p-4" key={"sk"+ind}>
                 <Progress text={sk.skill} percent={sk.percent} />
               </div>
             ))}
