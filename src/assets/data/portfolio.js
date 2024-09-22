@@ -25,6 +25,11 @@ import TTT4 from "../portfolio/ss_ttt_winner.png";
 import M1 from "../portfolio/media-1.png";
 import M2 from "../portfolio/media-2.png";
 
+import TD1 from "../portfolio/todo-list.png";
+import TD2 from "../portfolio/todo-grid.png";
+import TD3 from "../portfolio/todo-task.png";
+import TD4 from "../portfolio/todo-add.png";
+
 export const portfolio = [
   {
     projectName: "Aankade",
@@ -43,6 +48,15 @@ export const portfolio = [
     description: "",
     slug: "realtime-chat",
     tech: { front: "React", style: "Bootstrap", back: "Firestore/Firebase" },
+  },
+  {
+    projectName: "Todo List",
+    images: [TD1, TD2, TD3,  TD4],
+    client: "Self",
+    url: "https://todo-task-manager.web.app/",
+    description: "",
+    slug: "todo-tasks",
+    tech: { front: "React", style: "Tailwind" },
   },
   // {
   //   projectName: "Chat Mobile App",

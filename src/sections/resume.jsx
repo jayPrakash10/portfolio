@@ -5,7 +5,7 @@ import { skills } from "../assets/data/skills";
 const Resume = () => {
   return (
     <section id="resume">
-      <section className="p-6 pt-8 lg:p-8 pb-2 lg:pb-8 max-w-screen-xl mx-auto">
+      <section className="p-6 pt-8 lg:p-8 pb-2 lg:pb-8 max-w-screen-xl mx-auto load">
         <h2 className="border-transparent border-b-stone-800 border-4 py-2 font-semibold text-2xl lg:text-3xl lg:mb-4 heading-styled">
           Resume
         </h2>

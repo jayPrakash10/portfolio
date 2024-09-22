@@ -39,3 +39,18 @@ code {
     height: 34px;
   }
 }
+
+.load {
+  animation: load 1.5s;
+}
+
+@keyframes load {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

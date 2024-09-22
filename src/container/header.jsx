@@ -2,9 +2,14 @@ import React from "react";
 
 const Header = () => {
   function scroll_to_element(ele_id) {
-    document.getElementById(ele_id).scrollIntoView();
+    if(window.location.pathname === "/") {
+      document.getElementById(ele_id).scrollIntoView();
+    } else {
+      window.location.assign("http://localhost:3000/");
+    }
   }
 
+  
   return (
     <header className="sticky top-0 p-3 lg:p-5 bg-slate-50 rounded-b-lg z-10">
       <div className="flex items-center">

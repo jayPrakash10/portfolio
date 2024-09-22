@@ -1,10 +1,11 @@
+import { lazy, Suspense } from "react";
 import "./App.css";
-import Footer from "./container/footer";
-import Header from "./container/header";
 import Home from "./pages/home";
-import PortfolioApp from "./pages/portfolio-app";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Header from "./container/header";
+const Footer = lazy(() => import("./container/footer"));
+const PortfolioApp = lazy(() => import("./pages/portfolio-app"));
 
 function App() {
   return (
@@ -14,11 +15,20 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="portfolio/:project" element={<PortfolioApp />} />
+            <Route
+              path="portfolio/:project"
+              element={
+                <Suspense>
+                  <PortfolioApp />
+                </Suspense>
+              }
+            />
           </Routes>
         </BrowserRouter>
       </main>
-      <Footer />
+      <Suspense>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

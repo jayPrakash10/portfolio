@@ -14,7 +14,7 @@ const About = () => {
   return (
     <section id="about_me">
       <section
-        className="flex items-center justify-center p-8 -mt-2 pt-10 h-80 md:h-96 lg:h-[610px] bg-cover bg-norepeat"
+        className="flex items-center justify-center p-8 -mt-2 pt-10 h-80 md:h-96 lg:h-[610px] bg-cover bg-norepeat load"
         style={{ backgroundImage: `url(${BG})` }}
       >
         <div className="aspect-square flex justify-center flex-col rounded-full p-8 shadow-2xl shadow-gray-900 backdrop-blur">
@@ -39,7 +39,7 @@ const About = () => {
       </section>
       <section className="p-8 pb-2 lg:pb-8 max-w-screen-xl mx-auto lg:mt-6">
         <div className="flex flex-col lg:flex-row">
-          <div className="flex-[2] flex flex-col justify-between p-4">
+          <div className="flex-[2] flex flex-col justify-between p-4 load">
             <div>
               <p className="lg:text-lg mb-4">
                 I am Web developer located in Bengaluru, Karnataka. I have
@@ -75,7 +75,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="flex-1 p-4">
+          <div className="flex-1 p-4 load">
             <div className="text-xl lg:text-2xl font-semibold mb-2">
               Personal Information
             </div>
@@ -134,12 +134,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 load">
           <span className="border-transparent border-b-stone-800 border-2 py-1 font-semibold text-2xl">
             Services
           </span>
         </div>
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-2 mt-4">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-2 mt-4 load">
           <div className="p-2 flex-1 max-w-60">
             <div className="flex flex-col items-center gap-2">
               <BsLaptop className="text-5xl text-blue-800" />

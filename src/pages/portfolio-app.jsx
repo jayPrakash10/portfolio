@@ -19,13 +19,13 @@ const PortfolioApp = () => {
   }, [params]);
 
   return (
-    <section className="container py-16 mx-auto">
+    <section className="container py-16 px-2 mx-auto">
       <h3 className="text-3xl font-semibold mb-2 underline">
         {data?.projectName}
       </h3>
       {data?.url && (
         <a
-          className="flex items-center text-slate-600"
+          className="flex items-center text-slate-600 w-fit"
           href={data?.url}
           target="_blank"
           rel="noreferrer"
@@ -40,7 +40,7 @@ const PortfolioApp = () => {
             return (
               <Carousel.Item>
                 <div className="flex-1 flex justify-center min-w-fit">
-                  <img className="max-h-80" src={image} />
+                  <img className="max-h-80 shadow-lg" src={image} alt="_image" loading="lazy"/>
                 </div>
               </Carousel.Item>
             );

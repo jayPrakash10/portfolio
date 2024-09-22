@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { lazy, Suspense } from "react";
 
-import About from "../sections/about";
-import Resume from "../sections/resume";
-import Portfolio from "../sections/portfolio";
+const About = lazy(() => import("../sections/about"));
+const Resume = lazy(() => import("../sections/resume"));
+const Portfolio = lazy(() => import("../sections/portfolio"));
 
 const Home = () => {
   return (
     <>
-      <About />
-      <Resume />
-      <Portfolio />
+      <Suspense>
+        <About />
+      </Suspense>
+      <Suspense>
+        <Resume />
+      </Suspense>
+      <Suspense>
+        <Portfolio />
+      </Suspense>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
