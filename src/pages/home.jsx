@@ -1,21 +1,20 @@
-import React, { lazy, Suspense } from "react";
+import { lazy } from "react";
 
-const About = lazy(() => import("../sections/about"));
-const Resume = lazy(() => import("../sections/resume"));
-const Portfolio = lazy(() => import("../sections/portfolio"));
+// Lazy load Sections
+const HeroBanner = lazy(() => import("../sections/home/Banner"));
+const About = lazy(() => import("../sections/home/About"));
+const Experience = lazy(() => import("../sections/home/Experience"));
+const Projects = lazy(() => import("../sections/home/Projects"));
+const Contact = lazy(() => import("../sections/home/Contact"));
 
 const Home = () => {
   return (
     <>
-      <Suspense>
-        <About />
-      </Suspense>
-      <Suspense>
-        <Resume />
-      </Suspense>
-      <Suspense>
-        <Portfolio />
-      </Suspense>
+      <HeroBanner />
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
     </>
   );
 };
