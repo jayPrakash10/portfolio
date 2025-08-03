@@ -29,6 +29,9 @@ import NB10 from "../assets/projects/nb-10.png";
 import ET1 from "../assets/projects/et-1.png";
 import ET2 from "../assets/projects/et-2.png";
 import ET3 from "../assets/projects/et-3.png";
+import ET4 from "../assets/projects/et-4.png";
+import ET5 from "../assets/projects/et-5.png";
+import ET6 from "../assets/projects/et-6.png";
 
 import DC1 from "../assets/projects/dc-chat.png";
 import DC2 from "../assets/projects/dc-home.png";
@@ -472,7 +475,7 @@ export const resumeData = {
         database: "MongoDB",
       },
       website: "https://jayprakash10.github.io/expense-front",
-      images: [ET1, ET2, ET3],
+      images: [ET1, ET2, ET3, ET4, ET5, ET6],
       shortDescription: "Track and analyse your expenses",
       description: (
         <div className="space-y-4">
