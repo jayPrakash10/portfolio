@@ -60,4 +60,28 @@ const formatDuration = ({ years, months }) => {
   return parts.join(' ');
 };
 
-export { calculateTimePeriod, formatDuration };
+/**
+ * Formats an ISO date string into "MMM YYYY" format (e.g., "Jan 2023")
+ * 
+ * @param {string} dateString - The date string in ISO format (e.g., "2023-01-15")
+ * @returns {string} Formatted date string (e.g., "Jan 2023")
+ */
+const formatDateToMonthYear = (dateString) => {
+  if (!dateString) return '';
+  
+  const date = new Date(dateString);
+  
+  // Check if the date is valid
+  if (isNaN(date.getTime())) {
+    console.error('Invalid date string provided to formatDateToMonthYear');
+    return '';
+  }
+  
+  // Format the date as "MMM YYYY" (e.g., "Jan 2023")
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short'
+  });
+};
+
+export { calculateTimePeriod, formatDuration, formatDateToMonthYear };

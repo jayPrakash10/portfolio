@@ -10,7 +10,7 @@ const SectionHeader = ({ title }) => {
         fontWeight: 600,
         mx: "auto",
         textAlign: "center",
-        fontSize: { xs: "2rem", sm: "3rem", lg: "4rem" },
+        fontSize: { xs: "2.5rem", sm: "3rem", lg: "4rem" },
         width: "fit-content",
         position: "relative",
         "&::after": {

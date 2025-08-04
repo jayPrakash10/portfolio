@@ -74,10 +74,12 @@ const ExperienceCard = ({
     >
       <TimelineItem sx={{ minHeight: "150px" }}>
         <TimelineOppositeContent>
-          <Typography variant="h5" mb={1}>
+          <Typography variant="h5" mb={1} sx={{ fontSize: { xs: 20, md: 24 } }}>
             {position}
           </Typography>
-          <Typography variant="h6">{duration}</Typography>
+          <Typography variant="h6" sx={{ fontSize: { xs: 14, md: 20 } }}>
+            {duration}
+          </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
@@ -85,7 +87,7 @@ const ExperienceCard = ({
         </TimelineSeparator>
         <TimelineContent>
           <Stack gap={2} pb={4}>
-            <Typography variant="h5">{company}</Typography>
+            <Typography variant="h5" sx={{ fontSize: { xs: 20, md: 24 } }}>{company}</Typography>
             {(location || website) && (
               <Stack direction="row" gap={2} flexWrap="wrap">
                 {location && (
@@ -112,7 +114,11 @@ const ExperienceCard = ({
               </Stack>
             )}
             {description && (
-              <Typography variant="body1" component="div" fontSize={{ xs: "1rem", md: "1.25rem" }}>
+              <Typography
+                variant="body1"
+                component="div"
+                fontSize={{ xs: "1rem", md: "1.25rem" }}
+              >
                 {description}
               </Typography>
             )}

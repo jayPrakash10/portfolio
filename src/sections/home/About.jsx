@@ -38,7 +38,7 @@ const About = () => {
         <Grid
           container
           columnSpacing={{ xs: 8, lg: 4 }}
-          rowSpacing={{ xs: 4, md: 8, xl: 12 }}
+          rowSpacing={{ xs: 8, xl: 12 }}
           pt={{ xs: 4, xl: 10 }}
           alignItems="start"
         >
@@ -246,6 +246,7 @@ const About = () => {
                 textAlign: "center",
                 textDecoration: "underline",
                 textUnderlineOffset: "10px",
+                fontSize: { xs: "1.5rem", md: "2rem" },
               }}
             >
               Things I can do

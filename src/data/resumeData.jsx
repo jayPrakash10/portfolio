@@ -75,6 +75,7 @@ import OIG3 from "../assets/projects/oig-3.png";
 // Material Icons
 import { Api, Laptop, PhoneAndroid, Storage } from "@mui/icons-material";
 import { Header, Li, Paragraph, Ul } from "../components/ProjectTypograph";
+import { formatDateToMonthYear } from "../utils/dateUtils";
 
 export const resumeData = {
   personalInfo: {
@@ -87,7 +88,7 @@ export const resumeData = {
     },
     title: "Full Stack Developer",
     profileImage: ProfileImage,
-    dob: "01-11-1998",
+    dob: "1998-11-01",
     email: "10125prakash@gmail.com",
     phone: {
       country: "IN",
@@ -171,13 +172,13 @@ export const resumeData = {
         "Shopify",
       ],
       duration: {
-        start: "Oct 2024",
-        end: "May 2025",
+        start: "2024-10",
+        end: "2025-05",
         get duration() {
-          return `${this.start} - ${this.timePeriod}`;
+          return `${formatDateToMonthYear(this.start)} - ${this.timePeriod}`;
         },
         get timePeriod() {
-          return this.end === "" ? "Present" : this.end;
+          return this.end === "" ? "Present" : formatDateToMonthYear(this.end);
         },
       },
     },
@@ -198,13 +199,13 @@ export const resumeData = {
         "GitHub",
       ],
       duration: {
-        start: "Jun 2022",
-        end: "Feb 2024",
+        start: "2022-06",
+        end: "2024-02",
         get duration() {
-          return `${this.start} - ${this.timePeriod}`;
+          return `${formatDateToMonthYear(this.start)} - ${this.timePeriod}`;
         },
         get timePeriod() {
-          return this.end === "" ? "Present" : this.end;
+          return this.end === "" ? "Present" : formatDateToMonthYear(this.end);
         },
       },
     },
@@ -226,13 +227,13 @@ export const resumeData = {
         "GitHub",
       ],
       duration: {
-        start: "Dec 2021",
-        end: "May 2022",
+        start: "2021-12",
+        end: "2022-05",
         get duration() {
-          return `${this.start} - ${this.timePeriod}`;
+          return `${formatDateToMonthYear(this.start)} - ${this.timePeriod}`;
         },
         get timePeriod() {
-          return this.end === "" ? "Present" : this.end;
+          return this.end === "" ? "Present" : formatDateToMonthYear(this.end);
         },
       },
     },
