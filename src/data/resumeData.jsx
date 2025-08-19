@@ -32,6 +32,8 @@ import ET3 from "../assets/projects/et-3.png";
 import ET4 from "../assets/projects/et-4.png";
 import ET5 from "../assets/projects/et-5.png";
 import ET6 from "../assets/projects/et-6.png";
+import ET7 from "../assets/projects/et-7.png";
+import ET8 from "../assets/projects/et-8.png";
 
 import DC1 from "../assets/projects/dc-chat.png";
 import DC2 from "../assets/projects/dc-home.png";
@@ -123,7 +125,8 @@ export const resumeData = {
     github: "https://github.com/jayPrakash10",
     linkedin: "https://www.linkedin.com/in/jay-prakash-6a7807190/",
     resume:
-      "https://drive.google.com/uc?export=download&id=1Cz25TUF3WrwYbwOSi-BH9Ezp--JUlF9n",
+      // "https://drive.google.com/uc?export=download&id=1Cz25TUF3WrwYbwOSi-BH9Ezp--JUlF9n", // Frontend Resume
+      "https://drive.google.com/uc?export=download&id=1dP_DIn8TCNjtPom4dKNUVDQapt6Yah2q", // Full Stack Resume
   },
 
   services: [
@@ -476,7 +479,7 @@ export const resumeData = {
         database: "MongoDB",
       },
       website: "https://jayprakash10.github.io/expense-front",
-      images: [ET1, ET2, ET3, ET4, ET5, ET6],
+      images: [ET1, ET2, ET3, ET4, ET5, ET6, ET7, ET8],
       shortDescription: "Track and analyse your expenses",
       description: (
         <div className="space-y-4">
