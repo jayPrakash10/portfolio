@@ -159,7 +159,7 @@ export const resumeData = {
   experience: [
     {
       company: "Atomic House",
-      position: "Frontend Developer Intern",
+      position: "Frontend Developer",
       location: "Remote",
       description:
         "Engineered an URL bookmarking web app and browser extension, utilizing modern technologies and solving complex problems to improve team workflow and organization. Utilized an AI tool to accelerate workflow, leading to an 80% increase in project completion speed. Simultaneously, managed a shopify store for a client.",
